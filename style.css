@@ -135,7 +135,10 @@ ul a:hover {
     box-shadow:0 0 75px #E0C3FC;
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 650px) {
+    .container{
+        width: 100%;
+    }
     .hamburger {
         display: block;
     }
@@ -150,17 +153,17 @@ ul a:hover {
     .home .hero h1{
         font-size: 2.3em;
     }
-    .headphone{
-        height: auto;
-        
+    .buttons{
+        display: flex;
     }
     .headphone img{
-        width: 570px;
+        width: 350px;
     }
     .tech{
         flex-direction: column;
         gap: 2rem;
     }
+
     .category-cards {
         align-items: center;
         gap: 2rem;
@@ -170,16 +173,19 @@ ul a:hover {
         visibility: hidden;
     }
     .category .category-cards .card{
-        width: 200px;
+        width: 100%;
         height: 350px;
     }
+    .category .category-cards .card-hide{
+        display: none;
+    }
     .category .category-cards .card img{
-        width: 200px;
+        width: 100%;
     }
     section{
         margin: 0 0;
     }
-
+    
     .support {
         flex-direction: column;
         align-items: center;
@@ -197,21 +203,18 @@ ul a:hover {
     .contact {
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        min-height: 100vh;
     }
     .contact h1{
         padding-top: 100px;
     }
     .contact-info {
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
     }
-    .contact .email {
-        position: static;
-        margin-top: 1rem;
-    }
     
+    .email{
+        display: none;
+    }
 }
 
 .home {
@@ -224,7 +227,6 @@ ul a:hover {
 .headphone {
     display: flex;
     align-items: center;
-    height: 80vh;
     width: 45%;
 }
 
@@ -263,7 +265,6 @@ ul a:hover {
 }
 
 .tech {
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -288,9 +289,6 @@ ul a:hover {
     border-radius: 0 55px 0 0;
 }
 
-.category {
-    height: 100vh;
-}
 
 .category h1 {
     text-align: center;
@@ -347,7 +345,6 @@ ul a:hover {
 }
 
 .support {
-    height: 100vh;
     display: flex;
     justify-content: center;
     justify-content: space-between;
@@ -398,7 +395,6 @@ section {
 .contact {
     height: 100vh;
     display: flex;
-    justify-content: space-between;
     position: relative;
 }
 
@@ -411,7 +407,7 @@ section {
 
 .contact-info {
     display: flex;
-    gap: 10rem;
+    gap: 100px;
     padding-top: 100px;
 }
 
